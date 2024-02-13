@@ -4,7 +4,7 @@ export const TransactionHistory = ({ items }) => {
   return (
     <table className={css.table}>
       <thead>
-        <tr className={css.title}>
+        <tr className={css.headerRow}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
@@ -15,7 +15,7 @@ export const TransactionHistory = ({ items }) => {
         {items.map(({ id, type, amount, currency }, index) => (
           <tr
             key={id}
-            className={clsx(index % 2 == 0 ? css.cell : css.cellOdd)}
+            className={clsx(index % 2 == 0 ? css.rowOdd : css.rowEven)}
           >
             <td>{type}</td>
             <td>{amount}</td>

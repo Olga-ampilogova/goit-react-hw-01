@@ -1,5 +1,3 @@
-.list {}
-
 .box {
     justify-content: center;
     border: 1px solid black;
@@ -15,14 +13,9 @@
     padding-top: 20px;
 }
 
-.img {}
-
-.item {}
-
 .name {
     font-size: 30px;
 }
-
 
 .primary {
     color: green;

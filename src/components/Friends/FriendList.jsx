@@ -1,7 +1,7 @@
-import css from "./FriendListItem.module.css";
+import css from "./FriendList.module.css";
 import clsx from "clsx";
 
-export const FriendListItem = ({ friends: { avatar, name, isOnline } }) => {
+export const FriendList = ({ friends: { avatar, name, isOnline } }) => {
   const modeClass = clsx(isOnline ? css.primary : css.offline);
   let mode = "Offline";
   if (isOnline) {

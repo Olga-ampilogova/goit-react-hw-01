@@ -12,9 +12,9 @@ export const Profile = ({
     <div className={css.container}>
       <div className={css.box}>
         <img className={css.img} src={avatar} alt="User avatar" />
-        <p className={css.title}>{username}</p>
+        <p className={css.sharedStyle}>{username}</p>
         <p className={css.tag}>{tag}</p>
-        <p className={css.location}>{location}</p>
+        <p className={`${css.location} ${css.sharedStyle}`}>{location}</p>
       </div>
 
       <ul className={css.list}>

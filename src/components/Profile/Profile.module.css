@@ -3,7 +3,7 @@
     border-color: black;
 }
 
-.title {
+.sharedStyles {
     font-size: 56px;
     font-weight: 800;
     letter-spacing: -0.03em;
@@ -14,13 +14,10 @@
     border: 1px solid black;
 }
 
-.box {}
-
 .tag {
     font-size: 40px;
     font-weight: 600;
     letter-spacing: -0.03em;
-
 }
 
 .location {
@@ -35,8 +32,6 @@
     display: flex;
     width: 780px;
     border: 1px solid black;
-
-
 }
 
 .item {
