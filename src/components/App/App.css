@@ -7,17 +7,4 @@
 
 .box {
   border: 1px solid rgba(252, 249, 249, 0.1);
-
-}
-
-.friendBox {
-  display: flex;
-  margin-top: 40px;
-  width: 780px;
-  gap: 10px;
-
-}
-
-.friendItem {
-  width: auto;
 }

@@ -1,17 +1,14 @@
 import css from "./FriendList.module.css";
-import clsx from "clsx";
+import { FriendListItem } from "./FriendListItem";
 
-export const FriendList = ({ friends: { avatar, name, isOnline } }) => {
-  const modeClass = clsx(isOnline ? css.primary : css.offline);
-  let mode = "Offline";
-  if (isOnline) {
-    mode = "Online";
-  }
+export const FriendList = ({ friends }) => {
   return (
-    <div className={css.box}>
-      <img src={avatar} alt="Avatar" width="80" className={css.img} />
-      <p className={css.name}>{name}</p>
-      <p className={modeClass}>{mode}</p>
-    </div>
+    <ul className={css.friendBox}>
+      {friends.map((friend) => (
+        <li key={friend.id}>
+          <FriendListItem friend={friend} />
+        </li>
+      ))}
+    </ul>
   );
 };
